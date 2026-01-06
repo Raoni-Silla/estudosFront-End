@@ -1,0 +1,29 @@
+h1 {
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 0px;
+    padding: 5px;
+}
+p{
+    text-align: justify;
+}
+
+#cabecalhoUm /*id = # class = .*/{
+    background-color: purple;
+    box-shadow: 10px;
+}
+
+.fundoPreto{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+/*
+no html temos a especificidade, o estilo que vier por ultimo é oque
+o navegador vai considerar como estilo final
+o ID é mais forte que a class, então se eu defino um ID pra algo e coloco um estilo nele
+o estilo do ID prevalece por cima do estilo da class pra mesma tag
+*/
