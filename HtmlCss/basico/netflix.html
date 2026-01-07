@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Brasil</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(back_net.jpg);
+        }
+
+        #heading {
+             background: rgba(0, 0, 0, 0.7);
+        }
+
+        #heading div{
+            width: 95%;/*a porcentagem diz quantos porcentos a div vai ocupar na tela, se adaptando*/
+            display: flex; /*se comporta de forma diferente do block*/
+            justify-content: space-between;
+            margin: 0 auto; /*as medidas são no sentido horario, se for só duas uma controla a cima
+             e baixo e a outra direita e esquerda, o auto se ajusta no tamanho da tela*/
+            background-size: cover;/*a imagem vai se ajustar ao tamanho da tela*/
+            background-position: top center; /*a imagem vai se alinhar ao topo e ao centro da tela*/
+        }
+
+        #heading .h1Head{
+             font-size: 20px 0px;
+             text-transform: uppercase;
+             padding: 15px;
+        }
+
+        #heading a{
+            color: red;
+            text-decoration: none;
+            font-family: sans-serif
+        }
+
+        #heading button{
+            padding: 3px;
+            margin: 15px;
+            background-color: #ee0612fc;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 1px 1px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <header id="heading">
+        <div>
+            <h1 class="h1Head">
+                <a href="#">Netflix</a>
+            </h1>
+            <button class="logo-button">
+                <p>cadastrar</p>
+            </button>
+        </div>
+    </header>
+</body>
+</html>
