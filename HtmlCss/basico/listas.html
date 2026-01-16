@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas para navegação</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            height: 50px;
+            background-color:rgba(3, 3, 3, 50%);
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+            margin: 10px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-transform: uppercase;
+            padding: 1px 15px;
+        }
+        nav a:hover{
+            border-bottom: 2px solid cyan;
+            font-weight: semi-bold;
+            color: cyan;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+
+    <ul> <!-- lista não ordenada-->
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Serviços</li>
+        <li>Contato</li>
+    </ul>
+
+    <ol type="I"> <!-- lista ordenada-->
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+        <li>Quarto item</li>
+    </ol>
+
+    <dl><!-- lista de definição-->
+        <dt>HTML</dt> <!-- termo a ser definido -->
+        <dd>Linguagem de marcação para criar páginas web.</dd> <!-- definição do termo -->
+
+        <dt>CSS</dt>
+        <dd>Linguagem de estilo usada para descrever a apresentação de um documento HTML.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação usada para criar conteúdo interativo em páginas web.</dd>
+
+    </dl>
+</body>
+</html>

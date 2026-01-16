@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: darkblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table td, table th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }
+        .responsivo-tabela{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>trabalhando com tabelas</h1>
+    <div class="responsivo-tabela">
+        <table> <!-- ela recebe coisas similares a um site, cabeçalhos, linhas e colunas -->
+            <thead>
+                <caption> tabela de dados </caption> <!-- título da tabela -->
+            </thead>
+            <tr>
+                <th> cabeçalho 1 </th> <!--colunas-->>
+                <th> cabeçalho 2 </th>
+                <th> cabeçalho 3 </th>
+            </tr>
+            <tr>
+                <td> dado 1 </td>
+                <td> dado 2 </td>
+                <td> dado 3 </td>
+            </tr>
+            <tr>
+                <td> dado 4 </td>
+                <td> dado 5 </td>
+                <td> dado 6 </td>
+            </tr>
+    </div>
+    </table>
+</body>
+</html>
