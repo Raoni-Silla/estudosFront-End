@@ -52,6 +52,8 @@ p{
     border-radius: 20px;
     color: white;
     background-color: #007bff;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .h3Login{
@@ -64,7 +66,4 @@ p{
 .botaoLogin:hover{
     background-color: #006de1;
 }
-
-
-
 
