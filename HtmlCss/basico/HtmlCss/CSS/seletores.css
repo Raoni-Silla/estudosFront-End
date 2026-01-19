@@ -1,0 +1,21 @@
+*{
+    border: 1px solid red;
+    margin: auto;
+}
+
+main div section p{
+    color: blue;
+    text-align: center;
+}
+
+.headerPrincipal{
+    color: aquamarine;
+}
+
+.main-content h2{
+    color: darkgoldenrod;
+}
+
+.pai h1+p {
+    color: blueviolet;
+}
