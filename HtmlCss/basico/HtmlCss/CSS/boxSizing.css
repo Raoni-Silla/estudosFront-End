@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  width: 800px;
+  background-color: aqua;
+  margin: auto;
+}
+
+.caixaum {
+  width: 50%;
+  padding: 100px;
+  border: 30px solid brown;
+  background-color: darkred;
+}
+
+.caixadois {
+  width: 50%;
+  padding: 30px;
+  border: 10px solid chocolate;
+  background-color: rgb(29, 148, 25);
+}

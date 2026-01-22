@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
   height: 50%;
 }
 
-.login form input {
+.login form .nickname input, .login form .senha input {
   border: none;
   background: transparent; /* Remove o fundo branco */
   border: none; /* Remove todas as bordas padrão */
@@ -99,26 +100,59 @@ body {
 }
 
 .botaoLogin {
+  box-sizing: border-box;
   background-color: #0093ba;
-  height: 60px; /* Defina uma altura fixa */
-  width: 70%;
+  font-size: 25px;
+  height: 80px; /* Defina uma altura fixa */
+  width: 65%;
   border-radius: 5px;
   border: 1px solid #393a40;
   color: #eeeef0;
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 10px;
 }
 
 .botaoLogin:hover {
   background-color: #0092bad6;
 }
 
-.botaoLogin span {
-  font-size: 30px;
+.navegacao {
+  background-color: #0f1b1f;
+}
+.botaoLogin::after {
+  content: url(/telasTCC/html/imagem/log-in.svg);
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.navegacao{
-    background-color: #0F1B1F;
+.remeberLogin{
+    display: flex;
+    width: 80%;
+    color: #FAFDFE;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+    margin-top: -9px;
+    margin-bottom: 20px;
+}
+
+.labelRemember{
+    width: 100px;
+}
+
+.remembermeCheckBox{
+    height: 12px;
+    width: 0px;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  display: block;
+  width: 2px;
+  height: 12px;
+}
+
+.login form .remeberLogin input {
+    width: 12px;
 }
