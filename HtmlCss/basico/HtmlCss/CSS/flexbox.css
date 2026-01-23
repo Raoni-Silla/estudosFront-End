@@ -7,13 +7,41 @@
 .flex-container {
   background-color: rgba(226, 211, 43, 0.666);
   display: flex;
-  flex-direction: column;/* eixo principal */
-  height: 50vh; /*align itens, outra propriedade para se entender*/
+  /* flex-direction: row; */ /* eixo principal */
+  height: 50vh;
+  gap: 30px; /* só da espaçamento entre os proprios objetos */
+  padding: 30px; /* o espaço entre os elementos são iguais aos espaços da lateral do elemento pai */
+  align-items: flex-start; /* cross axis (eixo transversal) */
   justify-content: flex-start; /* eixo principal */
+  /*  flex-wrap: wrap; */ /* a gente pode quebrar ou não a linha atraves dessa propriedade */
+  flex-flow: row wrap; /* direction e wrap */
 }
+
+/* o align-content alinha todas as linhas do conteudo  */
 
 .flex-item {
   background-color: darkmagenta;
   border: 1px solid black;
-  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1; /* proporção de diminuição, ele ja vem com padrão como 1, o grow aumenta, o shrink diminue todos, distribuindo espaços de maneira igual linha por linha */
+  /* flex-basis: ;tamanho inicial do meu elemento */
 }
+
+
+.flex-item:last-child{
+    flex-grow: 2; /* o fator de crescimento dele é maior que de todos os elementos, sendo 2 vezes maior que os outros elementos da mesma linha do espaço que estava sobrando */
+    flex-basis: 100%;
+    flex: 0 1 100%; /* G,S,B */
+}
+/* 
+todos os itens do meu flex-grow tem a opção de true
+ou seja, o elemento cresce e é distribuido de forma igual em linha por linha
+*/
+
+/* order: 2;
+podemos utilizar a propriedade ordem pra dizer como os filhos vão se organizar, se não eles se organizam em sua propria ordem
+*/
+
+/* 
+cada item pode ter sua propria alinhação, atraves do align-self, o align-itens diz respeito ao pai com os filhos, o self diz como o proprio filho quer se alinhar
+*/
