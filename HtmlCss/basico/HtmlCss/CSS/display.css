@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* o display block por padrão sempre vai ocupar a largura(w) total da tela, mesmo o tamanho do bloco/ caixa sendo de 300px por 300 px*/
+
+/* 
+existe tambem o display inline block, que mescla os dois comportamentos, mas é estranho de se usar (não entendi ainda)
+*/
+
+/* 
+  como fazer pra um bloco alinhar e permitir que se use o espaço?
+  antes do flex blox e grid, se usava o float antigamente, um elemento ocupa somente seu espaço liberando o espaço
+  restante para outros elementos
+*/
+
+/* 
+quando colocar outro elemento e eu nao quero que esse novo elemento use o espaço que sobrou dessa grid (quando uso float), da pra usar uma propriedade chamada clear, limpando a esquerda ou a direita, colocando clear nessa nova propriedade com clear both (limpar os dois lados), clear left ou rigt, podemos tambem colocar na propria classe grid um pseudoelemento after no fim dela, fazendo isso eu forço essa grid a saber o tamanho dela?
+*/
+
+/* 
+ nossa grid aqui se limpa automaticamente, atraves de um pseudoelemento, aparecendo depois do tamanho total do grid, limpando a esquerda e a direita, e quando for se por novos elementos ele ja vai estar limpo e nao vai ocupar esse grid
+*/
+
+/* 
+esse tipo de grid foi substituido por flexbox e componente de grid proprio
+*/
+
+.grid {
+  padding: 15px;
+}
+
+.grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid .col {
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  padding: 15px;
+}
+
+.grid .col-content {
+  width: 100%;
+  height: 100%;
+  background-color: crimson;
+}

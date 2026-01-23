@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  background-color: rgba(226, 211, 43, 0.666);
+  display: flex;
+  flex-direction: column;/* eixo principal */
+  height: 50vh; /*align itens, outra propriedade para se entender*/
+  justify-content: flex-start; /* eixo principal */
+}
+
+.flex-item {
+  background-color: darkmagenta;
+  border: 1px solid black;
+  margin: 10px;
+}
