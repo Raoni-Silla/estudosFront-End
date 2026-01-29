@@ -1,0 +1,50 @@
+29 de jan 2025
+nós ultimos dias venho estudando e me aprofundando no estudo do front end, venho estudando mais a parte essencial do front end, sua estrutura e como montar a mesma, css grid, flex box, unidades de medidas, pseudoelementos, media queries e demais
+
+hoje estudei sobre unidade de medidas Unidades de medida no CSS (px, em, rem, vw, vh, vmax, vmin e %)
+px eu vi que é uma medida fixa, se eu defino algo como 20px ele vai ser 20px em uma tela de celular e em uma tela de pc, ignora totalmente as preferencias do usuario tambem, pois se o usuario aumentar o zoom da tela por necessidade, o px mantem o tamanho do elemento chumbado
+
+temos o em que é relativo ao elemento pai, caso nao tenha elemento pai ele é relativo ao seu proprio font size, vejamos como:
+
+o elemento pai tem o font size de 20 px entao temos
+
+.pai{
+    font-size;20px;
+}
+
+container pai, logo o filho tera acesso a essa informação
+.filho{
+    font-size:2em;
+}
+
+oque isso quer dizer?, quer dizer que o font size do filho é duas vezes maior que a do pai ou seja seria 20 * 2 = 40px de tamanho da fonte
+
+podemos aplicar ao padding e a margin, comumente usado em botoes pra caso precisamos aumentar a fonte o botao aumenta de proporções sozinho
+
+.pai{
+    padding: 1em; <-- padding do pai vai ser 20 px
+}
+
+ele é acumulativo tomar cuidado quando usar, pois se agrupado ele vai somando o tamanho do font size dos pais como
+
+se o filho tiver um neto
+
+.neto{
+    font-size:2em; <-- nao seria 40 como no filho, pois o filho esta definido como 40 px
+}
+
+aqui seria 40 * 2,  80 pxs de tamanho, e isso vai se acumulando, cuidado ao usar
+
+caso ele nao tenha elemento pai, e seja apenas um container sem pais, o font size aplicado sera o proprio font size do elemento
+
+.botao{
+    font-size:30px;
+    padding: 1em 2em;
+    border: 0.2em solid black;
+}
+
+oque isso quer dizer?
+quer dizer que o padding em cima e em baixo sera de 30 px
+as laterais terao um padding de 60px (2 * 30) e a margin tera
+0.2 desse valor, ou seja, ele foi baseado no tamanho do proprio font size
+caso a medida do font size aumente, as outras medidas aumentam proporcionalmente
