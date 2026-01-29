@@ -1,0 +1,13 @@
+*{
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+}
+
+.vmin {
+  background: red;
+  padding: 30px;
+  width: 10vmin;
+  height: 50vmin;
+  margin: auto;
+}
