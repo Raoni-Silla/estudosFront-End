@@ -48,3 +48,62 @@ quer dizer que o padding em cima e em baixo sera de 30 px
 as laterais terao um padding de 60px (2 * 30) e a margin tera
 0.2 desse valor, ou seja, ele foi baseado no tamanho do proprio font size
 caso a medida do font size aumente, as outras medidas aumentam proporcionalmente
+
+recapitulando dia 30/01/25
+
+então caso ele seja usado em um elemento pai ou em um elemento que não tenha pai, o em vai se basear no font size do proprio elemento para definir o tamanho de 1 em
+
+1rem
+
+r vem de root, a tag root (raiz) em html é a propria <html>
+
+por padrão a medida definida no font size pelos navegadores é de 16px, sendo o tamanho raiz das fontes
+
+então temos 1 rem = 16 px 2 rem = 32px
+
+então é mais fácil de usar e se manipular, é bem mais previsivel de se usar em vez de usar em que se acumula, ele valoriza a acessibilidade, se o usuario mudar o padrão do navegador por conta de dificuldades pra 20 px,1 rem iria valer 20px e iria crescer proporcionalmente
+
+é o mesmo calculo do em, multiplicado o valor raiz do font size x o tanto de em definido no css
+
+(raiz * tamanho definido no css) = qntd de pixels
+
+porcentagem %:
+sempre relativa ao elemento pai
+então se tivermos uma div pai com 500 px de width e o filho dela voce diz que tem 50% de width, quer dizer que 50% de 500 px = 250px, ou seja, ele sempre vai ocupar metade do elemento pai, o calculo se aplica igualmente, se a medida mudar, se fossem 10% iria ser 10% do width, e se fosse no height iria ser 10% do height
+
+unidades de medida viewport ( tamanho da tela )
+valor x (dimensão/100)
+olham direto pro tamanho da janela do navegador
+
+Vw = viewport width = largura da tela = 1vw é igual a 1% da largura da tela independente seja o tamanho que for 
+
+Vh = viewport height = altura da tela = 1Vh é igual a 1% da altura da tela independente seja a altura que for, aquele elemento vai sempre ocupar 1% do height
+
+Vmin e vmax
+
+Vmin -> ele escolhe o MENOR VALOR e utiliza como REGUA para medir a largura e altura do elemento
+se o menor lado for a largura por exemplo
+
+se a altura da tela fosse 1500 px e a largura fosse 1200 px, a largura menor seria a largura
+entao o algoritimo do navegador pegaria esse 1200 px e calcularia 1% de 1200 que seria 12
+
+levando em conta as seguintes medidas
+
+height:50vmin;
+width:50vmin;
+
+então o navegador pega 1% do menor lado (vmin) logo o calculo ficaria
+
+50 x 12 = 600px de altura
+10 x 12 = 120px de largura
+
+o vmax segue a mesma linha, porem oposta, ele pega do maior lado, entao no nosso caso o maior lado da tela é 1500px, o navegador pegaria 1% de 1500px que seria 15
+
+e faria o mesmo calculo usando esse 1% do maior lado como REGUA
+50 x 15 = 750 px de altura
+10 x 15 = 150px de largura
+
+valor no css x (lado escolhido / 100) = valor em pixels daquele width e height ou padding e etc..
+
+hoje eu estudarei css grid
+ao fim do dia retorno oque eu aprendi
