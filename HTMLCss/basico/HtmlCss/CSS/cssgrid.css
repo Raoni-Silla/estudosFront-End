@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "i1 i1"
+    "i2 i3"
+    "i4 i4"; /* fica mais facil de estilizar, muito poderoso, tem que ser com os nomes definidos em grid area */
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 80px 1fr 100px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.item-1 {
+  grid-area: i1; /* nome da area no grid (nome da celula) */
+  background: cyan;
+}
+
+.item-2 {
+  grid-area: i2;
+  background-color: black;
+}
+
+.item-3 {
+  grid-area: i3;
+  background-color: rgba(170, 255, 0, 0.444);
+}
+
+.item-4 {
+  background-color: blue;
+  grid-area: i4;
+}
+
+/* posso colocar grid auto columns informar que toda nova coluna criada automaticamente vai ter x tamanho? */
+
+/* a fração divide o espaço restante igualmente para todas as colunas */
+/* se eu dizer que a segunda coluna tem 2 frações quer dizer que ela vai ocupar 2x o tamanho de uma coluna normal */
+
+/* 
+terminologias, temos linhas de grade que são importantes pra se entender a grid
+entao pra uma linha de 3 colunas eu tenho 4 colunas de grade
+tenho uma grid de 4 linhas normais e 5 linhas de grade
+temos a trilha que é distancia entre uma linha virtual e outra linha virtual
+
+*/
+
+/* repeat(vezes que repita, tamanho da coluna (fr)
+posso tambem usar min max aqui
+
+repeat(3,minmax(100px,1fr)) <- 3 colunas com o tamanho minimo de 100px e maximo de 1 fr
+*/
+
+/* posso usar o auto-fit pra ter colunas responsivas ainda nao entendi */
+
+/* auto-fill, gera novas celulas vazias automaticante, tendo uso muito especifico, na maioria das vezes se usa auto fit, esticando as celulas ja existentes */
+
+/* 
+da pra usar as colunas virtuais como apoio para as seguintes propriedades
+
+grid-row-start: informa aonde essa linha vai começar;
+grid-row-end:diz em que linha virtual ela acaba;
+grid-column-start:2; diz em que coluna ela começa, apartir das linhas virtuais
+grid-column-end:4; diz que a coluna começa na coluna dois e termina na quatro, nas colunas(linhas virtuais)
+posso falar só grid-row: começa/termina;
+o mesmo se aplica pra column
+posso usar tambem o span
+
+grid-row: 4 / span 2; > começa na linha virtual 4 e ocupa 2 linhas virtuais a sua frente
+
+
+*/
+
+/* gap: 5px 10px; /* 5px entre as linhas e 10px entre as colunas */
+/*  display: grid; /* digo como o container vai se comportar */
+/*  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));  */ /* informo quantas colunas eu quero com qual tamanho de cada*/
+/* ela vai ter o tamanho minmo de 0 e o tamanho maximo de 1 fragmento */
+/* grid-template-rows: auto; */ /* podemos manipular as linhas tambem */
+/* diz que tamanho cada linha vai ter */

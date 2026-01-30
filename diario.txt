@@ -107,3 +107,11 @@ valor no css x (lado escolhido / 100) = valor em pixels daquele width e height o
 
 hoje eu estudarei css grid
 ao fim do dia retorno oque eu aprendi
+
+CSS GRID:
+
+ele é bidirecional e trabalhamos com linhas e colunas ao mesmo tempo
+diferentemente do flexbox que só nos preocupamos com o eixo principal e transversal
+
+pra o grid precisamos ter um container pai que vai dizer como seus filhos DIRETOS vao estar alinhados em linha e colunas
+
