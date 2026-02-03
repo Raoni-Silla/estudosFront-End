@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+   
+    <script>
+      let nome = prompt("Olá, digite seu nome: ");
+      let idade = parseInt(prompt(`Ótimo, ${nome}, digite sua idade: `));
+      let tamanhoNome = nome.length;
+
+      document.write(`<h1>Seu nome tem <strong>${tamanhoNome}</strong> letras  <br></h1>`);
+
+      if (tamanhoNome > idade) {
+        document.write(
+          " e o número de letras do seu nome é <strong>maior</strong> que sua idade.",
+        );
+      } else if (tamanhoNome < idade) {
+        document.write(
+          " e o número de letras do seu nome é<strong> menor</strong> que sua idade.",
+        );
+      } else {
+        document.write(
+          " e o número de letras do seu nome é <strong>exatamente igual</strong> à sua idade!",
+        );
+      }
+    </script>
+  </body>
+</html>

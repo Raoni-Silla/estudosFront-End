@@ -96,3 +96,18 @@ grid-row: 4 / span 2; > começa na linha virtual 4 e ocupa 2 linhas virtuais a s
 /* ela vai ter o tamanho minmo de 0 e o tamanho maximo de 1 fragmento */
 /* grid-template-rows: auto; */ /* podemos manipular as linhas tambem */
 /* diz que tamanho cada linha vai ter */
+
+/* 
+alinhamentos
+
+grid template columns: repeat(3colunas, 1 fr)
+grid template rows: (4linhas,1fr)
+justify-content:center; alinha a grid no centro e na horizontal
+align-items alinha na vertical que vem por padrão stretch 
+align-content: alinha a grid em si, a grid toda como um bloco, align items alinha o conteudo(item no centro ou etc na celula)
+justify-items: pro item dentro do local aonde ele esta, alinhar o conteudo no inicio da celula, fim, meio
+
+
+*/
+
+/* quando usar flex e quando usar grid? */
