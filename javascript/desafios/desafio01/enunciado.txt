@@ -1,0 +1,38 @@
+🚀 Desafio: Calculadora de Orçamento Inteligente
+
+Cenário: Você está criando um script para calcular o valor final de um serviço no ChamaJá. O usuário vai informar o valor da hora técnica, quantas horas trabalhou e se há um desconto a ser aplicado.
+O que o seu código deve fazer:
+
+    Entrada de Dados: Crie variáveis para armazenar:
+
+        O nome do prestador de serviço (ex: "Raoni Mendes").
+
+        O valor da hora técnica (ex: "150.50" -> atenção: simule que isso veio como String).
+
+        A quantidade de horas trabalhadas (ex: 10).
+
+        O valor de um cupom de desconto em porcentagem (ex: 10).
+
+    Tratamento de Dados: * Converta o valor da hora de String para número decimal.
+
+        Garanta que o nome do prestador não tenha espaços inúteis no início ou fim.
+
+    Cálculo (Ordem de Precedência):
+
+        Calcule o valorBruto (horas * valor da hora).
+
+        Calcule o valorFinal aplicando o desconto.
+
+        Dica de lógica: valorFinal = valorBruto - (valorBruto * (desconto / 100)).
+
+    Saída:
+
+        Exiba uma mensagem no console usando Template Strings (crases), mostrando o nome do prestador, o valor total bruto e o valor final com desconto.
+
+⚠️ Regras do Desafio:
+
+    Use const para os dados que não devem mudar durante a execução do cálculo.
+
+    Use let para os resultados dos cálculos.
+
+    Tente usar o operador de potência ** para criar uma "taxa de urgência" opcional, elevando o valor final ao quadrado se o serviço for urgente (brincadeira, isso seria caro demais! Mas sinta-se livre para testar o ** em algum lugar do código).
