@@ -1,0 +1,42 @@
+🚀 Desafio: Validador de Prestador VIP
+
+Cenário: No seu TCC, você quer dar um selo "VIP" para prestadores que atendem a certos critérios de qualidade e experiência.
+O que o seu código deve fazer:
+
+    Entrada de Dados (Variáveis):
+
+        nomePrestador: (String) "  raoni mendes silla  " (com espaços para você tratar).
+
+        idade: (Number) 20.
+
+        tempoExperiencia: (String) "2" (anos de experiência, simule que veio como String).
+
+        totalServicos: (Number) 55.
+
+        possuiCertificacao: (Boolean) true.
+
+    Tratamento de Dados:
+
+        Limpe os espaços do nome e converta para Maiúsculas (Dica: .toUpperCase()).
+
+        Converta o tempoExperiencia para número.
+
+    Cálculo e Lógica (O "Pulo do Gato"):
+    Você vai criar uma variável chamada ganhouSeloVIP (booleana) que deve ser true APENAS SE:
+
+        O prestador tiver mais de 1 ano de experiência.
+
+        E tiver realizado pelo menos 50 serviços.
+
+        OU se ele possuir uma certificação, independente do tempo de experiência.
+
+    Dica de precedência: Use parênteses para agrupar as regras corretamente!
+    const ganhouSeloVIP = (experiencia > 1 && servicos >= 50) || certificacao;
+
+    Saída de Dados:
+
+        Exiba no console (ou alert) uma mensagem estilizada:
+        "ANALISANDO PERFIL DE: [NOME_LIMPO]..."
+
+        Depois, uma mensagem dizendo:
+        "Pode receber o selo VIP? [true/false]"
