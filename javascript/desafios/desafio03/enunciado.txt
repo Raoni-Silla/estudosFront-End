@@ -1,0 +1,56 @@
+🚀 Desafio: Calculadora de Taxa de Urgência do ChamaJá
+
+O Cenário: No seu TCC, os prestadores podem cobrar uma "Taxa de Urgência" se o cliente precisar do serviço em menos de 24 horas. Além disso, se o valor final passar de R$ 500,00, ele ganha o selo "Serviço Premium".
+1. Estrutura HTML (Crie aí no seu arquivo):
+HTML
+
+<input type="text" id="nomeServico" placeholder="Nome do Serviço">
+<input type="number" id="valorBase" placeholder="Valor Base (R$)">
+<input type="number" id="prazoHoras" placeholder="Prazo de entrega (Horas)">
+
+<button onclick="calcular()">Calcular Orçamento</button>
+
+<div id="resultado">
+    <p id="txtResumo">Aguardando dados...</p>
+    <p id="txtSelo"></p>
+</div>
+
+2. O que o seu JavaScript deve fazer:
+
+    Captura e Tratamento:
+
+        Ao clicar no botão, pegue os valores dos 3 inputs.
+
+        Limpe os espaços do nome do serviço e coloque em Maiúsculas.
+
+        Converta o valor base e o prazo para Number.
+
+    Lógica de Cálculo (Operadores):
+
+        Se o prazoHoras for menor que 24, aplique uma taxa de urgência de 20% sobre o valor base.
+
+        Se o prazo for maior ou igual a 24, o valor permanece o original.
+
+        Cálculo: valorFinal = valorBase * 1.2 (para 20% de acréscimo).
+
+    Lógica de Selo (Operadores Lógicos):
+
+        O serviço será considerado "PREMIUM" se:
+
+            O valorFinal for maior que 500 OU o nome do serviço for "REFORMA".
+
+    Manipulação do DOM (A Árvore em ação):
+
+        No parágrafo txtResumo, mostre: "Serviço: [NOME] - Total: R$ [VALOR_FINAL]".
+
+        Se for Premium:
+
+            O txtSelo deve dizer: "Selo: SERVIÇO PREMIUM".
+
+            Mude a cor do texto do selo para Dourado (Gold) ou Laranja.
+
+        Se NÃO for Premium:
+
+            O txtSelo deve dizer: "Selo: Padrão".
+
+            Mude a cor para Cinza.

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos Dom</title>
+    <style>
+      div#area {
+        background-color: black;
+        color: cyan;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        display: flex;
+        /* Alinhamento vertical */
+        align-items: center;
+        /* Alinhamento horizontal */
+        justify-content: center;
+        /* Opcional: garante que o texto quebre linha se for longo */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="area">Interaja....</div>
+
+    <script>
+        
+        document.getElementById('area').addEventListener('click', clicar)
+        document.getElementById('area').addEventListener('mouseenter', entrar)
+        document.getElementById('area').addEventListener('mouseout',sair)
+
+        function clicar (){
+           area.innerText = 'clicou'
+           area.style.background = 'cyan'
+           area.style.color = 'black'
+        }
+        function entrar(){
+            let entrar = document.getElementById('area')
+            entrar.innerText = 'entrou'
+            area.style.background = 'orange'
+        }
+        function sair(){
+            let entrar = document.getElementById('area')
+            entrar.innerText = 'saiu'
+            area.style.background = 'black'
+            area.style.color = 'cyan'
+        }
+    </script>
+  </body>
+</html>
