@@ -28,6 +28,10 @@ document.querySelector("input#contar").addEventListener("click", function () {
 
   resposta.innerHTML = "";
 
+  if(inicioNumber == fimNumber){
+    resposta.innerHTML = "não da pra contar os numeros entre dois numeros iguais";
+    return;
+  }
   if (fimNumber > inicioNumber) {
     for (inicioNumber; fimNumber >= inicioNumber; inicioNumber += passoNumber) {
       resposta.innerHTML += `${inicioNumber} 👉`;
