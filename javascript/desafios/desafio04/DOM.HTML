@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      input {
+        margin: 15px;
+        padding: 12px 16px; /* Espaço interno para o texto não sufocar */
+        border: 2px solid #e0e0e0; /* Borda suave */
+        border-radius: 8px; /* Cantos arredondados */
+        font-size: 16px;
+        outline: none; /* Remove aquela linha preta padrão do navegador */
+        transition: all 0.3s ease; /* Suaviza a mudança de cor */
+        width: 300px;
+        background-color: #f9f9f9;
+      }
+
+      /* O "pulo do gato": Efeito quando o usuário clica para digitar */
+      input:focus {
+        border-color: #007bff; /* Azul vibrante */
+        background-color: #fff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Brilho suave ao redor */
+      }
+
+      p {
+        margin: 15px;
+        color: #333;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="number"
+      name="distancia"
+      id="distancia"
+      placeholder="digite a distancia"
+    />
+    <input
+      type="number"
+      name="valorServico"
+      id="valorServico"
+      placeholder="digite o valor do serviço"
+    />
+    <input
+      type="text"
+      name="diaSemana"
+      id="diaSemana"
+      placeholder="digite o dia da semana"
+    />
+    <input type="button" value="validar" class="validar" />
+    <p id="status">status....</p>
+
+    <script src="DOM.JS"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+🚀 Desafio: Validador de Agendamento (ChamaJá)
+
+O Cenário: Um cliente quer agendar um serviço. O sistema deve validar se o prestador está disponível, se a distância é aceitável e se o valor cobre o deslocamento.
+1. Estrutura HTML
+
+Crie três inputs e um botão:
+
+    input (number) id="distancia" -> Distância em KM.
+
+    input (number) id="valorServico" -> Valor total do serviço em R$.
+
+    input (text) id="diaSemana" -> Dia do agendamento (ex: "sábado", "domingo", "segunda").
+
+    button com a classe validar -> Para disparar a função.
+
+    p id="status" -> Onde aparecerá o veredito.
+
+2. O que o seu JavaScript deve fazer:
+
+    Captura e Limpeza:
+
+        Pegue os valores, converta para Number e o dia da semana para toLowerCase() e trim().
+
+    Lógica de Custos (Aritmética):
+
+        O custo do deslocamento é de R$ 2,50 por KM.
+
+        Calcule o lucroReal (Valor do Serviço - Custo de Deslocamento).
+
+    A Grande Decisão (Operadores Lógicos):
+
+        O agendamento será APROVADO apenas se:
+
+            O lucroReal for maior que R$ 50,00.
+
+            E a distancia for menor ou igual a 100 KM.
+
+            E o dia da semana NÃO for "domingo" (ninguém trabalha de domingo no ChamaJá!).
+
+    Feedback Visual (DOM):
+
+        Se for Aprovado:
+
+            Texto: "Agendamento Confirmado! Lucro de R$ [lucroReal]"
+
+            Cor: Verde.
+
+        Se for Reprovado:
+
+            Texto: "Agendamento Recusado por critérios de logística ou folga."
+
+            Cor: Vermelho.
