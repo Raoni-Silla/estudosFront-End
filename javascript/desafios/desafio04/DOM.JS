@@ -1,6 +1,7 @@
 document.querySelector('input.validar').addEventListener('click', validar)
 
 function validar (){
+    
     let caixaDistancia = document.querySelector('input#distancia')
     let caixaValorServico = document.querySelector('input#valorServico')
     let caixaDiaSemana = document.querySelector('input#diaSemana')
