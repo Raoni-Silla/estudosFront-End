@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>contador</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="tituloPrincipal">vamos contar</h1>
+    </header>
+
+    <section id="section">
+      <div id="formulario">
+        <label for="inicio"> Inicio</label>
+        <input type="number" name="inicio" id="inicio">
+
+        <label for="fim">Fim</label>
+        <input type="number" name="fim" id="fim">
+
+        <label for="passo">passo</label>
+        <input type="number" name="passo" id="passo">
+
+        <input type="button" value="contar" id="contar">
+      </div>
+
+      <div id="contando">
+        <p>contando:</p>
+        <p id="resposta"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>@Curso em video</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
