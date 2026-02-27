@@ -14,9 +14,9 @@ document.querySelector('input#gerar').addEventListener('click', function (){
   tabuada.innerHTML = ''
 
   for(let c = 0; c <= 10 ; c++){
-    let item = document.createElement ('option')
-    item.text = ` ${numeroConvertido} x ${c} = ${numeroConvertido * c}`
-    tabuada.appendChild(item)
+    let item = document.createElement ('option') //ele cria um elemento option dentro do select
+    item.text = ` ${numeroConvertido} x ${c} = ${numeroConvertido * c}` 
+    tabuada.appendChild(item) //adiciona o filho no select
   }
 
 })
