@@ -38,9 +38,16 @@ section {
   background-color: aliceblue;
   border-radius: 10px;
   padding: 15px;
-  box-shadow: 2px 3px 20px blueviolet;
+  box-shadow: 2px 3px 20px cyan;
 }
 
 section div {
   width: 470px;
+}
+
+#foto{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
 }
