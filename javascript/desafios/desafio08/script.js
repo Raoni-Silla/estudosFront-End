@@ -12,6 +12,7 @@ document.querySelector('input#gerar').addEventListener('click', function (){
   let tabuada = document.getElementById('seltab')
 
   tabuada.innerHTML = ''
+  
 
   for(let c = 0; c <= 10 ; c++){
     let item = document.createElement ('option') //ele cria um elemento option dentro do select

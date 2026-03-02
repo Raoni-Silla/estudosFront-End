@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orçamento dinâmico</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form action="#" id="form">
+        <h1>orçamentos <span>dinâmicos</span></h1>
+        <div class="errorMessage"></div>
+        <label for="nome">Nome do serviço </label>
+        <input type="text" name="nome" id="nome" />
+        <label for="distancia">distancia (KM) </label>
+        <input type="number" name="distancia" id="distancia" />
+        <label for="complexidade">Escolha uma complexidade:</label>
+        <select name="complexidade" id="complexidade">
+          <option value="1">Básico (1.0x)</option>
+          <option value="1.5">Intermediário (1.5x)</option>
+          <option value="2">Avançado (2.0x)</option>
+        </select>
+        <input type="button" value="Gerar Orçamento" id="submit-button" />
+      </form>
+      <div class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

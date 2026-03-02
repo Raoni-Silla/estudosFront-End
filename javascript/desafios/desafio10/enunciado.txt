@@ -1,0 +1,34 @@
+🛠️ Desafio: O Simulador de "Orçamento Dinâmico"
+
+Imagine que o ChamaJá precisa de uma tela onde o prestador de serviço calcula quanto cobrar, levando em conta o deslocamento, a complexidade e o tempo.
+📋 Requisitos do Projeto:
+
+    HTML:
+
+        Um input para o nome do serviço.
+
+        Um input tipo number para a distância (em km).
+
+        Um select com 3 níveis de complexidade: Básico (1.0x), Intermediário (1.5x), Avançado (2.0x).
+
+        Um botão "Gerar Orçamento".
+
+        Uma div ou section para exibir o resultado.
+
+    CSS:
+
+        Use Flexbox para centralizar um "Card de Orçamento".
+
+        Mude a cor de fundo do resultado: se o lucro for alto, borda verde; se for baixo, borda vermelha.
+
+    JavaScript (O coração):
+
+        Custo de Deslocamento: R$ 2,50 por KM (como você usou no código anterior).
+
+        Valor Base da Hora: R$ 50,00.
+
+        A Lógica: * Valor Total = (Valor Base * Multiplicador de Complexidade) + Custo de Deslocamento.
+
+        Validação: Se a distância for 0 ou o nome do serviço estiver vazio, exiba um alert e não calcule.
+
+        Manipulação de DOM: O resultado deve aparecer na tela formatado como moeda (R$), sem usar alert.
