@@ -1,0 +1,17 @@
+⚔️ O Desafio Final (O "Boss" das Promises)
+
+Você já sabe criar e já sabe encadear. Agora, vamos ver se você consegue lidar com a Paralelização.
+
+Às vezes, você não precisa esperar um aluno ser encontrado para buscar outra coisa (como a lista de matérias da escola). Você quer disparar duas buscas ao mesmo tempo e esperar que as duas terminem.
+
+Para isso, o JavaScript tem um método chamado Promise.all([promessa1, promessa2]).
+
+O Exercício:
+Imagine que você tem duas funções independentes:
+
+    buscarClima() -> resolve em 2s com "Ensolarado".
+
+    buscarTransito() -> resolve em 2s com "Normal".
+
+Se você usar o encadeamento (um .then dentro do outro), vai demorar 4 segundos (2 + 2).
+Se você usar Promise.all, vai demorar apenas 2 segundos, porque elas rodam juntas!
