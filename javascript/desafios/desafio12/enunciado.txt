@@ -1,0 +1,33 @@
+O Desafio: O Fluxo do Aluno
+
+Imagine que estamos em um sistema escolar. Para saber se um aluno pode ver suas notas, primeiro precisamos verificar se ele existe e depois buscar a nota dele.
+
+Siga estas regras:
+
+    Função 1 (buscarAluno):
+
+        Recebe um id.
+
+        Retorna uma Promise.
+
+        Após 1 segundo:
+
+            Se o id for 10, resolve com o nome "Victor".
+
+            Se não, dá reject com "Aluno não encontrado".
+
+    Função 2 (buscarNota):
+
+        Recebe o nome do aluno.
+
+        Retorna uma Promise.
+
+        Após 1 segundo:
+
+            Se o nome for "Victor", resolve com a nota 9.5.
+
+            Se não, dá reject com "Nota não lançada".
+
+🎯 O objetivo final:
+
+Você deve chamar a primeira função e, dentro do primeiro .then(), retornar a chamada da segunda função. Assim, você terá um segundo .then() logo abaixo para mostrar a nota final.

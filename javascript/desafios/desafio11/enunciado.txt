@@ -1,0 +1,15 @@
+Crie um sistema de Verificação de Saldo (pense em um app de banco ou créditos).
+
+    Crie a função verificarSaldo que recebe o nome de um usuario.
+
+    Ela deve retornar a Promise (o contrato).
+
+    Lá dentro, use um setTimeout de 1 segundo (simulando a busca no banco de dados).
+
+    A Lógica:
+
+        Se o usuário for "Victor", o resolve deve enviar o valor 100.
+
+        Se for qualquer outro nome, o reject deve enviar um erro: "Usuário não encontrado".
+
+    O Consumo: Chame a função e use o .then() para mostrar o saldo e o .catch() para mostrar o erro caso ele ocorra.
