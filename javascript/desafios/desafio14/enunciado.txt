@@ -1,0 +1,33 @@
+🛠️ O Desafio: Fluxo de Pedido
+
+Você vai criar três funções que retornam Promises (pode usar o setTimeout de 1s em cada uma para simular o tempo de resposta).
+
+    fazerPedido(item):
+
+        Se o item for "Pizza", resolve com: { prato: "Pizza", preco: 50 }.
+
+        Se não, dá reject com: "Não temos esse prato no cardápio".
+
+    processarPagamento(valor):
+
+        Recebe o preço. Se o valor for menor ou igual a 100, resolve com: "Pagamento Aprovado".
+
+        Se for maior, dá reject com: "Saldo Insuficiente".
+
+    enviarEntregador():
+
+        Resolve sempre com: "O entregador saiu para entrega!".
+
+🎯 O Objetivo Final (A parte do Async/Await)
+
+Crie uma função principal chamada fluxoDePedido que seja async. Dentro dela, você deve:
+
+    Usar o try/catch (obrigatório para tratar erros no Async/Await).
+
+    Dar await no fazerPedido("Pizza") e guardar o resultado em uma variável.
+
+    Dar await no processarPagamento usando o preço que veio do pedido anterior.
+
+    Dar await no enviarEntregador.
+
+    Dar um console.log final com o status de tudo.
