@@ -115,3 +115,4 @@ diferentemente do flexbox que só nos preocupamos com o eixo principal e transve
 
 pra o grid precisamos ter um container pai que vai dizer como seus filhos DIRETOS vao estar alinhados em linha e colunas
 
+anotações transferidas para meu obsidian
